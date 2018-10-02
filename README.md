@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple project for showing how to save multidimensional array to db with ruby on rails.
 
-Things you may want to cover:
+Important step is to define migration field as a string and add `:array => true` attribute to migration field.
 
-* Ruby version
+Sample post migration:
 
-* System dependencies
+`class CreatePosts < ActiveRecord::Migration[5.2]
+  def change
+    create_table :posts do |t|
+      t.string :title
+      t.string :body, :array => true
 
-* Configuration
+      t.timestamps
+    end
+  end
+end`
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![alt text](https://raw.github.com/nezirz/multidimensional_array/master/MultidimensionalArrays.png)
