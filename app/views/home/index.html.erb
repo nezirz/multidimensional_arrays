@@ -1,0 +1,8 @@
+<h1>Home#index</h1>
+<p>
+<ul>
+<% @users.each do |u| %>
+    <li ><%= u.name %> <%= u.nickname %></li> 
+<% end %>
+</ul>
+</p>
