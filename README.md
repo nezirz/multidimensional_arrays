@@ -19,4 +19,4 @@ end
 ```
 
 
-![alt text](https://raw.github.com/nezirz/multidimensional_array/master/MultidimensionalArrays.png)
+![alt text](https://raw.github.com/nezirz/multidimensional_arrays/master/MultidimensionalArrays.png)
